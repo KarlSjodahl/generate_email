@@ -45,8 +45,6 @@ efternamn = ["Nilsson", "Andersson","Johansson","Olsson", "Ohlsson", "Bengtsson"
 			"Jonasson","Åkesson","Norberg","Blomqvist","Blom","Andreasson","Sundström","Astrom","Ek","Göransson","Lindholm","Lofgren",
 			"Ivarsson","Söderström","Nyman","Jensen","Bergqvist","Falk"];
 
-#letters = string.ascii_lowercase[:20]
-
 def get_random_domains():
 	return random.choice(domains);
 
@@ -59,45 +57,55 @@ def get_random_mfornamn():
 def get_random_efternamn():
 	return random.choice(efternamn);
 
-def generate_md5_from_email():
-	print "generate_md5_from_email";
-	email = get_random_mfornamn() + "." + get_random_efternamn() + "@" + get_random_domains();
-	print email;
-	m = hashlib.md5();
-	m.update(email);
-	print m.hexdigest();
-	f = open("md5")
-
 def get_kfornamn():
-	return kfornamn = open("kfornamn.txt").readlines();
+	kfornamn = open("kfornamn.txt").readlines();
 
 
 def get_mfornamn():
-	return mfornamn = open("mfornamn.txt").readlines();
+	mfornamn = open("mfornamn.txt").readlines();
 
 def get_domain():
-	return domain = open("doman.txt").readlines();
+	domain = open("doman.txt").readlines();
 
 def get_efternamn():
-	return efternamn = open("efternamn.txt").readlines();
+	efternamn = open("efternamn.txt").readlines();
 
 def get_md5():
-	number = 0
-	file = open("emailhash.csv", "r");
-	for l in file:
-		md5 = l.replace('"', '');
-		number = number+1;
-		#print md5;
+	print "get_md5";
+	for x in range(0, 100000):
+		# build an email and random pick namn.efternamn@domain
+		email = get_random_mfornamn() + "." + get_random_efternamn() + "@" + get_random_domains();
+		print email;
+		m = hashlib.md5();
+		m.update(email);
+		#What is the md5 sum of the mail?
+		hashed_mail = m.hexdigest();
+		print hashed_mail;
+		number = 0
 
+		#Open the hashed values to compare with
+		file = open("emailhash.csv", "r").readlines()
+		for l in file:
+			md5 = l.replace('"', '');
+			number = number+1;
+			#If we have a match, save it to a file
+			if(md5 == hashed_mail):
+				print "FOUND A MATCH!!!! Email: %s md5: %s" % (email,hashed_mail);
+				f = open("found_mail.txt", "w");
+				f.write(email + " " + hashed_mail);
+
+
+
+	f.close();
 	print "Number of unmatched md5-sums: %d " %number;
 
 def main():
-	#get_random_domains();
-	#get_random_kfornamn();
-	#get_random_mfornamn();
-	#get_md5();
-	for x in range(0,100000000):
-		generate_md5_from_email();
+	get_md5();
+	#for x in range(0,10):
+	#	gen = generate_md5_from_email();
+	#	for l in gen
+	#		print l;
+
 	#generate_md5_from_email();
 
 
