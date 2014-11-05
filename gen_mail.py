@@ -12,38 +12,40 @@ domains = ["hotmail.com", "gmail.com", "live.com", "yahoo.se", "yahoo.com", "hot
 			"swipnet.se","spray.se", "msn.com", "msn.se", "mail.com","sverige.nu","passagen.se","hotbrev.com","hushmail.com","hush.com",
 			"home.se","bredband.net","bahnhofbredband.se","mail.ru","rocketmail.com",]
 
-kvinnligt_fornamn = ["Alice", "Elsa", "Julia", "Ella", "Maja", "Ebba", "Emma", "Linnea", 
-					"Molly", "Alva", "Wilma", "Agnes", "Klara", "Nellie", "Isabelle", "Olivia", "Alicia",
-					"Ellen", "Lilly", "Stella","Freja","Saga","Emilia","Astrid","Ida","Nova","Moa","Isabella",
-					"Alma","Vera","Signe","Elin","Ester","Selma","Ellie","Amanda","Sara","Tyra","Tuva","Felicia",
-					"Matilda","Elvira","Leah","Sofia","Siri","Hanna","Lovisa","Lova","Nora","Edith","Tilde","Meja",
-					"Thea","Ines","Liv","Emelie","Filippa","Nathalie","Elise","Juni","Tilda","Leia","Melissa","Stina",
-					"Sigrid","Svea","Ingrid","My","Ronja","Marta","Tindra","Lisa","Jasmine",
-					"Livia","Minna","Cornelia","Iris","Majken","Joline","Linn","Emmy","Hilda","Mira","Elina","Greta",
-					"Josefin","Lykke","Vilda","Anna","Hedvig","Tove","Lina","Annie","Hedda","Sofie","Viktoria"
-					"Frida","Maria","Rut", "Evelina" ,"Novalie"];
+kvinnligt_fornamn = ["alice", "elsa", "julia", "ella", "maja", "ebba", "emma", "linnea", 
+					"molly", "alva", "wilma", "agnes", "klara", "nellie", "isabelle", "olivia", "alicia",
+					"ellen", "lilly", "stella","freja","saga","emilia","astrid","ida","nova","moa","ssabella",
+					"alma","vera","signe","elin","ester","selma","ellie","amanda","sara","tyra","tuva","felicia",
+					"matilda","elvira","leah","sofia","siri","hanna","lovisa","lova","nora","edith","tilde","meja",
+					"thea","ines","liv","emelie","filippa","nathalie","elise","juni","tilda","leia","melissa","stina",
+					"sigrid","svea","ingrid","my","ronja","marta","tindra","lisa","jasmine",
+					"livia","minna","cornelia","iris","majken","joline","linn","emmy","hilda","mira","elina","greta",
+					"josefin","lykke","vilda","anna","hedvig","tove","lina","annie","hedda","sofie","viktoria"
+					"frida","maria","rut", "evelina" ,"novalie"];
 
-manligt_fornamn = ["William","Oscar","Oskar","Lucas","Hugo","Elias","Alexander","Liam","Charlie","Oliver","Filip","Leo"
-					"Viktor","Vincent","Emil","Axel","Anton","Erik","Olle","Theo","Ludvig","Isak","Arvid","Gustav",
-					"Noah","Edvin","Melvin","Alfred","Max","Albin","Elliot","Nils","Adam",
-					"Sixten","Leon","Wilmer","Benjamin","Viggo","Alvin","Theodor","Jacob","Valter","Kevin","Melker",
-					"Felix","Simon","Adrian",
-					"Casper","Noel","Jonathan","Gabriel","Love","Malte","Jack","Mohamed","Rasmus","Milo","Carl",
-					"Karl","Harry","Josef","Samuel","Sebastian","Ville","Linus","Wilhelm","David","August","Ebbe",
-					"Elton","Neo","Loke","Joel","Vilgot","Hampus","Vidar","Daniel","Elvin","Sigge","Elis","Sam",
-					"John","Eddie","Alex","Milton","Frank","Aron","Maximilian","Otto","Henry","Edward","Svante",
-					"Mio","Ali","Julian","Tim","Hjalmar","Ivar","Colin","Hannes","Tage","Levi","Matteo"];
+manligt_fornamn = ["william","oscar","oskar","lucas","hugo","elias","alexander","liam","charlie","oliver","filip","leo"
+					"viktor","vincent","emil","axel","anton","erik","olle","theo","ludvig","isak","arvid","gustav",
+					"noah","edvin","melvin","alfred","max","albin","elliot","nils","adam",
+					"sixten","leon","wilmer","benjamin","viggo","alvin","theodor","jacob","valter","kevin","melker",
+					"felix","simon","adrian","goran","amir","gabbe",
+					"casper","noel","jonathan","gabriel","love","malte","jack","mohamed","rasmus","milo","carl",
+					"karl","harry","josef","samuel","sebastian","ville","linus","wilhelm","david","august","ebbe",
+					"elton","neo","loke","joel","vilgot","hampus","vidar","daniel","elvin","sigge","elis","sam",
+					"john","eddie","alex","milton","frank","aron","maximilian","otto","henry","edward","svante",
+					"mio","ali","julian","tim","hjalmar","ivar","colin","hannes","tage","levi","matteo", "kalle", "svante"
+					"robban", "nisse", "pelle","henke","sebbe","matte","peppe","fredrik","fredde","marcus","markus","mathias",
+					"mattias","patrik"];
 
-efternamn = ["Nilsson", "Andersson","Johansson","Olsson", "Ohlsson", "Bengtsson","Karlsson","Eriksson","Larsson","Persson",
-			"Svensson","Gustafsson","Pettersson","Jonsson","Jansson","Hansson","Petersson","Carlsson","Lindberg",
-			"Magnusson","Gustavsson","Lindstrom","Olofsson","Lindgren","Axelsson","Lundberg","Jakobsson","Bergström",
-			"Lundgren","Berg","Berglund","Fredriksson","Mattsson","Sandberg","Henriksson","Sjoberg","Forsberg","Lindqvist",
-			"Håkansson","Danielsson","Engström","Lind","Lundin","Eklund","Gunnarsson","Samuelsson","Fransson","Holm","Johnsson",
-			"Bergman","Holmberg","Nyström","Lundqvist","Arvidsson","Björk","Isaksson","Nyberg","Söderberg","Mårtensson","Wallin","Nordström",
-			"Lundström","Eliasson","Björklund","Berggren","Ström","Nordin","Sandström","Hermansson","Åberg","Holmgren","Ekström",
-			"Sundberg","Hedlund","Sjögren","Martinsson","Månsson","Dahlberg","Öberg","Abrahamsson","Strömberg","Hellström",
-			"Jonasson","Åkesson","Norberg","Blomqvist","Blom","Andreasson","Sundström","Astrom","Ek","Göransson","Lindholm","Lofgren",
-			"Ivarsson","Söderström","Nyman","Jensen","Bergqvist","Falk"];
+efternamn = ["nilsson", "andersson","johansson","olsson", "ohlsson", "bengtsson","karlsson","eriksson","larsson","persson",
+			"svensson","gustafsson","pettersson","jonsson","jansson","hansson","petersson","carlsson","lindberg",
+			"magnusson","gustavsson","lindstrom","olofsson","lindgren","axelsson","lundberg","jakobsson","bergstrom",
+			"lundgren","berg","berglund","fredriksson","mattsson","sandberg","henriksson","sjoberg","forsberg","lindqvist",
+			"hakansson","danielsson","engstrom","Llind","lundin","eklund","gunnarsson","samuelsson","fransson","holm","johnsson",
+			"bergman","holmberg","nystrom","lundqvist","arvidsson","bjork","isaksson","nyberg","soderberg","martensson","wallin","nordstrom",
+			"lundstrom","eliasson","bjorklund","berggren","ström","nordin","sandstrom","hermansson","aberg","holmgren","ekstrom",
+			"sundberg","hedlund","sjogren","martinsson","mansson","dahlberg","oberg","abrahamsson","stromberg","hellstrom",
+			"jonasson","akesson","norberg","blomqvist","blom","andreasson","sundstrom","astrom","ek","goransson","lindholm","lofgren",
+			"ivarsson","soderstrom","nyman","jensen","bergqvist","falk"];
 
 def get_random_domains():
 	return random.choice(domains);
@@ -57,9 +59,12 @@ def get_random_mfornamn():
 def get_random_efternamn():
 	return random.choice(efternamn);
 
+def get_random_number():
+	number = random.randrange(1,100+1);
+	return str(number);
+
 def get_kfornamn():
 	kfornamn = open("kfornamn.txt").readlines();
-
 
 def get_mfornamn():
 	mfornamn = open("mfornamn.txt").readlines();
@@ -70,44 +75,118 @@ def get_domain():
 def get_efternamn():
 	efternamn = open("efternamn.txt").readlines();
 
-def get_md5():
-	print "get_md5";
-	for x in range(0, 100000):
-		# build an email and random pick namn.efternamn@domain
-		email = get_random_mfornamn() + "." + get_random_efternamn() + "@" + get_random_domains();
-		print email;
-		m = hashlib.md5();
-		m.update(email);
-		#What is the md5 sum of the mail?
-		hashed_mail = m.hexdigest();
-		print hashed_mail;
-		number = 0
+def hash_to_compare(hashed_mail, email):
+	#Open the hashed values to compare with
+	file = open("emailhash.csv", "r").readlines()
+	for l in file:
+		md5 = l.replace('"', '');
+		#If we have a match, save it to a file
+		if(md5 == hashed_mail):
+			print "FOUND A MATCH!!!! Email: %s md5: %s" % (email,hashed_mail);
+			f = open("found_mail.txt", "a");
+			f.write(email + " " + hashed_mail + "\n");
+			f.close();
 
-		#Open the hashed values to compare with
-		file = open("emailhash.csv", "r").readlines()
-		for l in file:
-			md5 = l.replace('"', '');
-			number = number+1;
-			#If we have a match, save it to a file
-			if(md5 == hashed_mail):
-				print "FOUND A MATCH!!!! Email: %s md5: %s" % (email,hashed_mail);
-				f = open("found_mail.txt", "w");
-				f.write(email + " " + hashed_mail);
+def generate_mfornamn_efternamn_mail():
+	email = get_random_mfornamn() + "." + get_random_efternamn() + "@" + get_random_domains();
+	print email;
+	return email;
 
+def generate_kfornamn_efternamn_mail():
+	email = get_random_kfornamn() + "." + get_random_efternamn() + "@" + get_random_domains();
+	print email;
+	return email;
 
+def generate_mfornamn_efternamn_mail1():
+	email = get_random_mfornamn() + "_" + get_random_efternamn() + "@" + get_random_domains();
+	print email;
+	return email;
 
-	f.close();
-	print "Number of unmatched md5-sums: %d " %number;
+def generate_kfornamn_efternamn_mail1():
+	email = get_random_kfornamn() + "_" + get_random_efternamn() + "@" + get_random_domains();
+	print email;
+	return email;
+
+def generate_mfornamn_mail():
+	email = get_random_mfornamn() + "@" + get_random_domains();
+	print email;
+	return email;
+
+def generate_kfornamn_mail():
+	email = get_random_kfornamn() + "@" + get_random_domains();
+	print email;
+	return email;
+
+def generate_mformnamn_number_mail():
+	email = get_random_mfornamn() + get_random_number() + "@" + get_random_domains();
+	print email;
+	return email;
+
+def generate_kformnamn_number_mail():
+	email = get_random_kfornamn() + get_random_number() + "@" + get_random_domains();
+	print email;
+	return email;
+
+def generate_hash(email):
+	m = hashlib.md5();
+	m.update(email);
+	#What is the md5 sum of the mail?
+	hashed_mail = m.hexdigest();
+	print hashed_mail;
+	return hashed_mail;
 
 def main():
-	get_md5();
-	#for x in range(0,10):
-	#	gen = generate_md5_from_email();
-	#	for l in gen
-	#		print l;
+	number_mails = 0
 
-	#generate_md5_from_email();
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_kfornamn_efternamn_mail();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);
 
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_mfornamn_efternamn_mail();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);
+
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_kfornamn_efternamn_mail1();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);
+
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_mfornamn_efternamn_mail1();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);
+
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_kfornamn_mail();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);
+
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_mfornamn_mail();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);
+
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_kformnamn_number_mail();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);
+
+	for x in range(0, 100000):
+		number_mails = number_mails + 1;
+		email = generate_mformnamn_number_mail();
+		hash1 = generate_hash(email);
+		hash_to_compare(hash1, email);	
+
+	print "Number of generated mails %s " %number_mails;
 
 if __name__ == "__main__":
 	main()
