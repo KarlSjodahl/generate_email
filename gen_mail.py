@@ -1,10 +1,16 @@
 #!/usr/bin/python
 # -*- coding: iso-8859-15 -*-
+#
+# Generate emails and compare them to a list of md5 sums.
+# Author: Karl Sjödahl <karl.sjodahl@gmail.com>
+###############################################
 
 import random
 import hashlib
 
-domains = ["hotmail.com", "gmail.com", "live.com"]
+domains = ["hotmail.com", "gmail.com", "live.com", "yahoo.se", "yahoo.com", "hotmail.se", "live.se", "telia.com", "bredband.se", "bredband.com",
+			"swipnet.se","spray.se", "msn.com", "msn.se", "mail.com","sverige.nu","passagen.se","hotbrev.com","hushmail.com","hush.com",
+			"home.se","bredband.net","bahnhofbredband.se","mail.ru","rocketmail.com",]
 
 kvinnligt_fornamn = ["Alice", "Elsa", "Julia", "Ella", "Maja", "Ebba", "Emma", "Linnea", 
 					"Molly", "Alva", "Wilma", "Agnes", "Klara", "Nellie", "Isabelle", "Olivia", "Alicia",
@@ -12,7 +18,7 @@ kvinnligt_fornamn = ["Alice", "Elsa", "Julia", "Ella", "Maja", "Ebba", "Emma", "
 					"Alma","Vera","Signe","Elin","Ester","Selma","Ellie","Amanda","Sara","Tyra","Tuva","Felicia",
 					"Matilda","Elvira","Leah","Sofia","Siri","Hanna","Lovisa","Lova","Nora","Edith","Tilde","Meja",
 					"Thea","Ines","Liv","Emelie","Filippa","Nathalie","Elise","Juni","Tilda","Leia","Melissa","Stina",
-					"Sigrid","Svea","Ingrid","My","Ronja","Märta","Tindra","Lisa","Jasmine",
+					"Sigrid","Svea","Ingrid","My","Ronja","Marta","Tindra","Lisa","Jasmine",
 					"Livia","Minna","Cornelia","Iris","Majken","Joline","Linn","Emmy","Hilda","Mira","Elina","Greta",
 					"Josefin","Lykke","Vilda","Anna","Hedvig","Tove","Lina","Annie","Hedda","Sofie","Viktoria"
 					"Frida","Maria","Rut", "Evelina" ,"Novalie"];
@@ -28,7 +34,16 @@ manligt_fornamn = ["William","Oscar","Oskar","Lucas","Hugo","Elias","Alexander",
 					"John","Eddie","Alex","Milton","Frank","Aron","Maximilian","Otto","Henry","Edward","Svante",
 					"Mio","Ali","Julian","Tim","Hjalmar","Ivar","Colin","Hannes","Tage","Levi","Matteo"];
 
-efternamn = ["Nilsson", "Andersson","Johansson","Olsson", "Ohlsson", "Bengtsson"];
+efternamn = ["Nilsson", "Andersson","Johansson","Olsson", "Ohlsson", "Bengtsson","Karlsson","Eriksson","Larsson","Persson",
+			"Svensson","Gustafsson","Pettersson","Jonsson","Jansson","Hansson","Petersson","Carlsson","Lindberg",
+			"Magnusson","Gustavsson","Lindstrom","Olofsson","Lindgren","Axelsson","Lundberg","Jakobsson","Bergström",
+			"Lundgren","Berg","Berglund","Fredriksson","Mattsson","Sandberg","Henriksson","Sjoberg","Forsberg","Lindqvist",
+			"Håkansson","Danielsson","Engström","Lind","Lundin","Eklund","Gunnarsson","Samuelsson","Fransson","Holm","Johnsson",
+			"Bergman","Holmberg","Nyström","Lundqvist","Arvidsson","Björk","Isaksson","Nyberg","Söderberg","Mårtensson","Wallin","Nordström",
+			"Lundström","Eliasson","Björklund","Berggren","Ström","Nordin","Sandström","Hermansson","Åberg","Holmgren","Ekström",
+			"Sundberg","Hedlund","Sjögren","Martinsson","Månsson","Dahlberg","Öberg","Abrahamsson","Strömberg","Hellström",
+			"Jonasson","Åkesson","Norberg","Blomqvist","Blom","Andreasson","Sundström","Astrom","Ek","Göransson","Lindholm","Lofgren",
+			"Ivarsson","Söderström","Nyman","Jensen","Bergqvist","Falk"];
 
 #letters = string.ascii_lowercase[:20]
 
@@ -51,7 +66,20 @@ def generate_md5_from_email():
 	m = hashlib.md5();
 	m.update(email);
 	print m.hexdigest();
-	if 
+	f = open("md5")
+
+def get_kfornamn():
+	return kfornamn = open("kfornamn.txt").readlines();
+
+
+def get_mfornamn():
+	return mfornamn = open("mfornamn.txt").readlines();
+
+def get_domain():
+	return domain = open("doman.txt").readlines();
+
+def get_efternamn():
+	return efternamn = open("efternamn.txt").readlines();
 
 def get_md5():
 	number = 0
@@ -68,7 +96,9 @@ def main():
 	#get_random_kfornamn();
 	#get_random_mfornamn();
 	#get_md5();
-	generate_md5_from_email();
+	for x in range(0,100000000):
+		generate_md5_from_email();
+	#generate_md5_from_email();
 
 
 if __name__ == "__main__":
