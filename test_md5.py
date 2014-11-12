@@ -3,7 +3,7 @@
 #
 # Run with:
 # python test_md5.py text_file_that_contains_email.txt
-# Author: Karl Sjödahl <karl.sjodahl@gmail.com>
+# Author: Karl Sjödahl
 
 import hashlib
 import sys
